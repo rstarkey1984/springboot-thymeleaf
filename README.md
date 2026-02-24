@@ -7,23 +7,33 @@
 1. 프로젝트 실행 환경 준비
 2. 회원가입 화면 구성 (`/signup`)
 3. 로그인 화면 구성 (`/login`)
-4. Controller 매핑 (GET/POST)
-5. Service 검증 로직 기초
-6. Repository 데이터 저장/조회 기초
-7. 세션 기반 로그인 상태 관리
-8. 예외 처리 (`AppException`) 적용
-9. 통합 실행 점검
+4. Service 계층 분리 + 세션 저장/종료
+5. Repository 데이터 저장/조회 기초
+6. 예외 처리 (`AppException`) 적용
+7. 화면 피드백 개선
+8. 통합 실행 점검
 
 ## URL 기준
 - `GET /signup` : 회원가입 화면
 - `POST /signup` : 회원가입 처리
 - `GET /login` : 로그인 화면
 - `POST /login` : 로그인 처리
+- `GET /logout` : 로그아웃(세션 종료)
 
 ## 템플릿 기준
 - `templates/signup.html`
 - `templates/login.html`
 - `templates/error/app-error.html` (예외 안내)
+
+## 교재 파일
+- `1.md` 프로젝트 시작과 흐름 이해
+- `2.md` 회원가입 화면/Controller
+- `3.md` 로그인 화면/Controller
+- `4.md` Service 분리 + 세션
+- `5.md` Repository(DB 테이블)
+- `6.md` AppException + 전역 예외 처리
+- `7.md` 화면 피드백 개선
+- `8.md` 통합 점검
 
 ## 실습 목표
 - 회원가입 요청 데이터를 검증할 수 있다.
